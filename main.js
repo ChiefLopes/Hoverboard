@@ -25,5 +25,7 @@ const beautifulColors = [
 const SQUARES = 500;
 
 for (i = 0; i < SQUARES; i++) {
-    const squares = document.createElement("div") 
+    const squares = document.createElement("div");
+    squares.classList.add("square");
+    console.log(squares.length);
 }
