@@ -22,10 +22,12 @@ const beautifulColors = [
   "#8E8D8A", // Gray
 ];
 
-const SQUARES = 500;
+const SQUARES = 504;
 
 for (i = 0; i < SQUARES; i++) {
     const squares = document.createElement("div");
     squares.classList.add("square");
-    console.log(squares.length);
+    // console.log(squares.length);
+
+    container.appendChild(squares)
 }
