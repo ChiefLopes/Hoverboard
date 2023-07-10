@@ -22,12 +22,16 @@ const beautifulColors = [
   "#8E8D8A", // Gray
 ];
 
-const SQUARES = 504;
+const SQUARES = 509;
 
 for (i = 0; i < SQUARES; i++) {
     const squares = document.createElement("div");
     squares.classList.add("square");
     // console.log(squares.length);
 
-    container.appendChild(squares)
+    squares.addEventListener("mouseover", () => setColor(square))
+
+    squares.addEventListener("mouseout", () => removeColor(square))
+
+    container.appendChild(squares)  // this is used to attach the newly created squares element to the container div.
 }
