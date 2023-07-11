@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-const beautifulColors = [
+const colors = [
   "#FF6F61", // Coral
   "#FFD166", // Apricot
   "#06D6A0", // Teal
@@ -36,9 +36,9 @@ for (i = 0; i < SQUARES; i++) {
     container.appendChild(squares)  // this is used to attach the newly created squares element to the container div.
 }
 
-function setColor(squares) {
-   const beautifulColors = getRandomColor();
-   console.log(beautifulColors);
+function setColor(element) {
+   const colors = getRandomColor()
+   console.log(colors);
 }
 function removeColor(element) {
    console.log("clicked");
@@ -46,5 +46,6 @@ function removeColor(element) {
 
 
 function getRandomColor() {
-    return beautifulColors[Math.floor(Math.random) * beautifulColors.length]
+   return colors[Math.floor(Math.random() * colors.length)]
+
 }
