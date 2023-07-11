@@ -36,9 +36,15 @@ for (i = 0; i < SQUARES; i++) {
     container.appendChild(squares)  // this is used to attach the newly created squares element to the container div.
 }
 
-function setColor(element) {
-   console.log(element);
+function setColor(squares) {
+   const beautifulColors = getRandomColor();
+   console.log(beautifulColors);
 }
 function removeColor(element) {
-   console.log(element);
+   console.log("clicked");
+}
+
+
+function getRandomColor() {
+    return beautifulColors[Math.floor(Math.random) * beautifulColors.length]
 }
