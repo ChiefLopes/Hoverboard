@@ -29,9 +29,16 @@ for (i = 0; i < SQUARES; i++) {
     squares.classList.add("square");
     // console.log(squares.length);
 
-    squares.addEventListener("mouseover", () => setColor(square))
+    squares.addEventListener("mouseover", () => setColor(squares))
 
-    squares.addEventListener("mouseout", () => removeColor(square))
+    squares.addEventListener("mouseout", () => removeColor(squares))
 
     container.appendChild(squares)  // this is used to attach the newly created squares element to the container div.
+}
+
+function setColor(element) {
+   console.log(element);
+}
+function removeColor(element) {
+   console.log(element);
 }
