@@ -42,7 +42,8 @@ function setColor(element) {
    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
 }
 function removeColor(element) {
-   console.log("clicked");
+   element.style.background = "#1d1d1d";
+   element.style.boxShadow = `0 0 2px #000`
 }
 
 
